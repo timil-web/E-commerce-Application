@@ -1,0 +1,110 @@
+[
+  {
+    "id": "prod_001",
+    "name": "Diamond Solitaire Ring",
+    "price": 45000,
+    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop",
+    "description": "Elegant 18K gold ring with 1 carat diamond",
+    "category": "Rings",
+    "inStock": true
+  },
+  {
+    "id": "prod_002",
+    "name": "Pearl Necklace Set",
+    "price": 28000,
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop",
+    "description": "Classic freshwater pearl necklace with matching earrings",
+    "category": "Necklaces",
+    "inStock": true
+  },
+  {
+    "id": "prod_003",
+    "name": "Gold Kada Bracelet",
+    "price": 35000,
+    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+    "description": "Traditional 22K gold kada with intricate design",
+    "category": "Bracelets",
+    "inStock": true
+  },
+  {
+    "id": "prod_004",
+    "name": "Emerald Drop Earrings",
+    "price": 52000,
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop",
+    "description": "Stunning emerald earrings in white gold setting",
+    "category": "Earrings",
+    "inStock": true
+  },
+  {
+    "id": "prod_005",
+    "name": "Ruby Pendant",
+    "price": 38000,
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop",
+    "description": "2 carat ruby pendant with diamond accents",
+    "category": "Pendants",
+    "inStock": true
+  },
+  {
+    "id": "prod_006",
+    "name": "Platinum Wedding Band",
+    "price": 42000,
+    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop",
+    "description": "Classic platinum wedding band with brushed finish",
+    "category": "Rings",
+    "inStock": true
+  },
+  {
+    "id": "prod_007",
+    "name": "Sapphire Tennis Bracelet",
+    "price": 68000,
+    "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+    "description": "Exquisite sapphire and diamond tennis bracelet",
+    "category": "Bracelets",
+    "inStock": true
+  },
+  {
+    "id": "prod_008",
+    "name": "Gold Hoop Earrings",
+    "price": 18000,
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop",
+    "description": "Classic 18K gold hoop earrings",
+    "category": "Earrings",
+    "inStock": true
+  },
+  {
+    "id": "prod_009",
+    "name": "Diamond Choker Necklace",
+    "price": 95000,
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop",
+    "description": "Luxurious diamond choker with 5 carats total weight",
+    "category": "Necklaces",
+    "inStock": true
+  },
+  {
+    "id": "prod_010",
+    "name": "Gold Coin Pendant",
+    "price": 22000,
+    "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop",
+    "description": "22K gold Lakshmi coin pendant",
+    "category": "Pendants",
+    "inStock": true
+  },
+  {
+    "id": "prod_011",
+    "name": "Rose Gold Ring Set",
+    "price": 32000,
+    "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop",
+    "description": "Trendy rose gold stackable ring set of 3",
+    "category": "Rings",
+    "inStock": true
+  },
+  {
+    "id": "prod_012",
+    "name": "Antique Jhumka Earrings",
+    "price": 25000,
+    "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop",
+    "description": "Traditional antique finish jhumka earrings",
+    "category": "Earrings",
+    "inStock": true
+  }
+]
