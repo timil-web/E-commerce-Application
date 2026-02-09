@@ -1,0 +1,148 @@
+/* Header Component Styles */
+
+.header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logoIcon {
+  font-size: 2rem;
+  animation: shine 2s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.logoText {
+  background: linear-gradient(45deg, #ffd700, #ffed4e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.navLink:hover {
+  color: #ffd700;
+}
+
+.cartLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cartLink:hover {
+  background: rgba(255, 215, 0, 0.1);
+  color: #ffd700;
+}
+
+.cartIcon {
+  font-size: 1.5rem;
+}
+
+.cartText {
+  display: none;
+}
+
+.cartBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .cartText {
+    display: inline;
+  }
+  
+  .cartBadge {
+    top: -5px;
+    right: -5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .logoText {
+    font-size: 1.2rem;
+  }
+  
+  .nav {
+    gap: 1rem;
+  }
+  
+  .navLink {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

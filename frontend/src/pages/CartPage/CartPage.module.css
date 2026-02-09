@@ -1,0 +1,252 @@
+/* CartPage Styles */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 80px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.clearButton {
+  background: transparent;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+  padding: 0.625rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clearButton:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.itemsHeader {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.summary {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 100px;
+}
+
+.summaryTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 1.5rem 0;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9375rem;
+}
+
+.free {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 1.5rem 0;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+}
+
+.checkoutButton {
+  width: 100%;
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkoutButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.continueLink {
+  display: block;
+  text-align: center;
+  color: #16213e;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.continueLink:hover {
+  color: #1a1a2e;
+  text-decoration: underline;
+}
+
+.securityBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.lockIcon {
+  font-size: 1.125rem;
+}
+
+/* Empty Cart State */
+.emptyCart {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 3rem auto;
+}
+
+.emptyIcon {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.emptyCart h2 {
+  color: #1a1a2e;
+  margin: 0 0 1rem 0;
+  font-size: 1.75rem;
+}
+
+.emptyCart p {
+  color: #666;
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+}
+
+.shopButton {
+  display: inline-block;
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.shopButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    position: static;
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .summary {
+    padding: 1.5rem;
+  }
+
+  .summaryTitle {
+    font-size: 1.25rem;
+  }
+
+  .summaryTotal {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .emptyCart h2 {
+    font-size: 1.5rem;
+  }
+
+  .emptyIcon {
+    font-size: 4rem;
+  }
+}
